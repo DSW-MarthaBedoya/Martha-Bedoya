@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+header{
+    background-color: #ab4bde;
+    font-size:x-large;
+    display: flex;
+    align-items: center;
+    text-align: center; 
+    color: rgb(37, 35, 32); 
+    justify-content:space-around;
+}
+nav {
+    color: rgb(121, 95, 58);
+    background: #f3aacb;
+    text-align: center;  
+}
+nav .menu{
+    display:flex;
+    justify-content: center;
+
+}
+nav .menu li {
+    position: relative;
+    top: 130%;
+}
+nav .menu li a {
+    display: block;
+    padding: 10px;
+    background: #d4d9dd;
+    color: rgb(14, 11, 11);
+    transition: all 300ms ease;
+    padding: 15px;
+
+}
+nav .menu li a:hover{
+    background: transparent;
+    color: #1e91ed;
+}
+nav .submenu li {
+    position:absolute;
+    top: 130%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 300ms ease;
+}
+
+nav .menu li:hover .submenu li {
+    top: 100;
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+
+}
+section{    
+    background-color: #1e91ed;
+    grid-column: 1/4;
+    text-align: center;
+    margin: 0.2%;
+    
+}
+
+section article p {
+    text-align: justify;
+    margin: 1%;
+
+}
+section article ul li ol {
+    text-align: left;
+    margin: 3%;
+}
+
+aside{
+    background-color: #81c9fa;
+    grid-column: 4/5;
+}
+footer{
+    background-color: #ab4bde;
+    color: blanchedalmond;
+}
+footer h5 {
+    display: flex;
+    justify-content: center;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
